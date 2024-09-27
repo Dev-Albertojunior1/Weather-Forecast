@@ -14,8 +14,8 @@ import { ALL_DESCRIPTIONS } from './utilities/DateConstants';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {
   getTodayForecastWeather,
-  getWeekForecastWeather,
-} from './utilities/DataUtils';
+  getWeekForecastWeather,  
+} from './utilities/DataUtils';  
 
 function App() {
   const [todayWeather, setTodayWeather] = useState(null);
@@ -120,7 +120,7 @@ function App() {
       />
     );
   }
-
+  
   if (isLoading) {
     appContent = (
       <Box
@@ -181,18 +181,31 @@ function App() {
             }}
           >
             <Box
-              component="img"
               sx={{
                 height: { xs: '16px', sm: '22px', md: '26px' },
                 width: 'auto',
+                display: 'flex',
+                alignItems: 'center',
               }}
-              alt="logo"
-              src={Logo}
-            />
+            >
+              <Typography
+                variant="h6" // Tamanho do texto
+                sx={{
+                  fontSize: { xs: '16px', sm: '22px', md: '26px' },
+                  fontWeight: 'bold',  // Deixa o texto em negrito
+                  color: 'white',      // Cor do texto
+                  fontFamily: 'Poppins', // Exemplo de fonte
+                }}
+              >
+                Alberto Junior
+              </Typography>
+            </Box>
 
+
+            
             <UTCDatetime />
             <Link
-              href="https://github.com/Amin-Awinti"
+              href="https://github.com/Dev-Albertojunior1"
               target="_blank"
               underline="none"
               sx={{ display: 'flex' }}

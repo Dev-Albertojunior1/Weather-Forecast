@@ -1,3 +1,6 @@
 {
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "editor.selectionClipboard": true,
+    "editor.emptySelectionClipboard": true,
+    "editor.copyWithSyntaxHighlighting": true
 }
