@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'; // Ícone do GitHub
 
 const Navbar = () => {
     return (
-        <AppBar position="static" sx={{ backgroundColor: '#1976d2' }}>
+        <AppBar position="static" sx={{ backgroundColor: '#000' }}>
             <Toolbar>
                 <IconButton edge="start" color="inherit" aria-label="menu">
                     <MenuIcon />
@@ -17,9 +17,6 @@ const Navbar = () => {
                 </Typography>
                 <IconButton color="inherit" href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
                     <LinkedInIcon />
-                </IconButton>
-                <IconButton color="inherit" href="https://github.com" target="_blank" aria-label="GitHub">
-                    <GitHubIcon />
                 </IconButton>
             </Toolbar>
         </AppBar>

@@ -6,30 +6,24 @@ const Footer = () => {
     return (
         <Box
             sx={{
-                bgcolor: '#1976d2',
+                bgcolor: '#1116',
                 color: 'white',
-                p: 2,
+                p: 1, // Padding reduzido
                 position: 'relative',
                 bottom: 0,
-                width: '100%',
+                width: '90%', // Definindo uma largura específica
+                maxWidth: '600px', // Largura máxima
+                margin: '0 auto', // Centralizando
                 textAlign: 'center',
             }}
         >
-            <Typography variant="body2">
+            <Typography variant="body2" sx={{ fontSize: '0.8rem' }}>
                 {'© '}
                 <Link color="inherit" href="https://github.com/Dev-Albertojunior1">
-                    Seu Nome ou Empresa
+                    Alberto Junior
                 </Link>
                 {' '}{new Date().getFullYear()}
                 {'. Todos os direitos reservados.'}
-            </Typography>
-            <Typography variant="body2">
-                <Link color="inherit" href="/about">
-                    Sobre
-                </Link>{' | '}
-                <Link color="inherit" href="/contact">
-                    Contato
-                </Link>
             </Typography>
         </Box>
     );
